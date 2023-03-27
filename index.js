@@ -11,7 +11,7 @@ const UpdateTime = () => {
   const currentDate = `${DateTime.now().monthLong} ${DateTime.now().day} ${DateTime.now().year}, ${DateTime.now().hour}:${DateTime.now().minute}:${DateTime.now().second}`;
   const dateElement = document.getElementById('date');
   dateElement.innerText = currentDate;
-}
+};
 
 // update time
 UpdateTime();
