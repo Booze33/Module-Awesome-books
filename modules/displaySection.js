@@ -40,6 +40,6 @@ const displaySection = (sectionToDisp) => {
       section.classList.add('hide-section');
     }
   });
-}
+};
 
 export default displaySection;
