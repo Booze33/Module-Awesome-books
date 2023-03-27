@@ -13,6 +13,7 @@ function UpdateTime() {
   dateElement.innerText = currentDate;
 }
 
+// update time
 UpdateTime();
 setInterval(UpdateTime, 1000);
 
