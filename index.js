@@ -2,7 +2,6 @@ import Library from './modules/library.js';
 import displaySection from './modules/displaySection.js';
 import { DateTime } from './node_modules/luxon/src/luxon.js';
 
-
 // let listBooks
 const listBooks = new Library();
 listBooks.className = 'purple';
@@ -14,16 +13,15 @@ function UpdateTime() {
   dateElement.innerText = currentDate;
 }
 
-UpdateTime ();
+UpdateTime();
 setInterval(UpdateTime, 1000);
 
 // MENUS
 const listMenuLink = document.querySelector('#m-list');
 const addMenuLink = document.querySelector('#m-add');
 const contactMenuLink = document.querySelector('#m-contact');
-// Get all the section
-// const mainSection = document.querySelector('.main-section');
 
+// const mainSection = document.querySelector('.main-section');
 
 listMenuLink.addEventListener('click', () => {
   displaySection('book-list');
