@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awesome Books</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <span>Awesome Books</span>
+      <ul class="menu-links">
+        <li class="rigth-border" id="m-list"><a class="active" href="#">List</a>
+        </li>
+        <li class="rigth-border" id="m-add"><a href="#">Add new</a></li>
+        <li id="m-contact"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="date" id="date">JAN 11 2023 12:00 PM</div>
+  </header>
+  <main class="main-section">
+    <h1 class="title" id="page-title">All awesome books</h1>
+    <section class="book-list" id="book-list"></section>
+    <section class="add-book hide-section" id="add-book">
+      <h2 class="title" id="contact-title">Add a new book</h2>
+      <form action="" method="post" id="form">
+        <input type="text" placeholder="Title" id="title" minlength=3>
+        <input type="text" placeholder="Author" id="author" minlength=3>
+        <button class=" add-book-btn" id="add-book-btn" type="button">Add</button>
+      </form>
+      <span id="msg-add-book"></span>
+    </section>
+    <section class="contact hide-section" id="contact">
+      <h2 class="title" id="contact-title">Contact information</h2>
+      <p>Do you have any questions or you just want to say "Hello"?<br>You can reach out to us!</p>
+      <ul class="contact-list">
+        <li>Our e-mail: mail@mail.com</li>
+        <li>Our phone number: 0043586534422</li>
+        <li>Our address: Streetname 22, 84503 City, Country</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <article class="footer-content">@Copyright 2023</article>
+  </footer>
+  <script src="./index.js" type="module"></script>
+
+</body>
+</html>
