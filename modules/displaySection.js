@@ -5,7 +5,7 @@ const listLink = document.querySelector('#m-list a');
 const addLink = document.querySelector('#m-add a');
 const contactLink = document.querySelector('#m-contact a');
 
-function displaySection(sectionToDisp) {
+const displaySection = (sectionToDisp) => {
   sections.forEach((section) => {
     if (sectionToDisp === 'book-list') {
       pageTitle.style.display = 'block';
